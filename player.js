@@ -1,18 +1,13 @@
-function Player(name, job){
+function Player(name, job, canvas_player){
 	this.name		= name;
-	this.job		= job;
-	this.inventory	= new Array(0, 0); //Multi dimensional array of items
-	this.position 	= new Array(0, 0); //Characters position on the map
-	this.r_position	= new Array(0, 0); //Characters position on player canvas in pixles
+	this.position 	= [0, 0]; //Characters position on the map
+	this.canvas		= canvas_player;
 	
 	this.limiter	= 5; //Frames required to pass between movements
 	this.limiter_counter = 0;
-	
-	this.width		= 32;
-	this.height		= 32;
-	
+
 	this.update_position = function(position_x, position_y){
-		this.position = new Array(position_x, position_y);
+		this.position = [position_x, position_y];
 	}
 	
 	this.move = function(){
@@ -53,9 +48,9 @@ function Player(name, job){
 		}
 	}
 	
-	this.draw = function(canvas){
-		canvas.fillStyle = '#37FF00';
-		canvas.fillRect(this.r_position[0], this.r_position[1], this.width, this.height);
+	this.draw = function(){
+		this.canvas.fillStyle = '#37FF00';
+		this.canvas.fillRect(this.position[0]*this.width, this.position[1]*this.height, this.width, this.height);
 	}
 	
 }
