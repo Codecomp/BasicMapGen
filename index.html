@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Simple Map Generator</title>
+	
+	<script type="text/javascript" src="jquery-1.10.1.min.js"></script>
+	<script type="text/javascript" src="jquery.hotkeys.js"></script>
+	<script type="text/javascript" src="key_status.js"></script>
+	
+	<script type="text/javascript" src="utility.js"></script>
+	<script type="text/javascript" src="sprite.js"></script>
+	<script type="text/javascript" src="game.js"></script>
+	<script type="text/javascript" src="player.js"></script>
+	<script type="text/javascript" src="world_loader.js"></script>
+	<script type="text/javascript" src="map_generator.js"></script>
+	
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+
+<div id="content">
+	<header>
+	
+	</header>
+
+	<section id="game">
+		<div id="game_screen" style="margin:20px auto; border:2px solid #000000; position:relative;">
+			<canvas id="screen" style="margin:0 auto; width:400px; display:block"></canvas>
+			<canvas id="player" style="position:absolute;"></canvas>
+		</div>
+		<div id="game_menu">
+			
+		</div>
+	</section>
+	
+	<section id="game_debug" style="width:750px; padding:20px; margin:0 auto; height:400px; overflow-x:scroll;">
+	
+	</section>
+
+	<footer>
+	
+	</footer>
+</div>
+
+</body>
+</html>
