@@ -1,4 +1,4 @@
-# Project Name
+# Basic Map Generator
 
 Simple HTML5, JavaScript and Canvas random map generation.
 This was an exploratory project looking into the use of javaScript OOP and HTML5 games, The plan was to create a map generator that could be used and them explored. Some code for placing a character on screen zoomed in exists but is non functional in this current state as I can't remember how i built it.
